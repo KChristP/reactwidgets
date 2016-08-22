@@ -15,7 +15,6 @@ class Weather extends React.Component {
         if (xmlhttp.readyState == XMLHttpRequest.DONE ) {
            if (xmlhttp.status == 200) {
               let response = JSON.parse(xmlhttp.responseText);
-              console.log(response);
               self.setState({temperature: response.main.temp, city: response.name});
            }
            else if (xmlhttp.status == 400) {

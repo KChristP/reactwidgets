@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Tabs from './tabs';
 import WidgetClock from './clock.jsx';
 import Weather from './weather';
+import Autocomplete from './autocomplete';
 
 document.addEventListener('DOMContentLoaded',()=>{
   const root = document.getElementById("root");
@@ -23,6 +24,7 @@ class Widgets extends React.Component{
         <Tabs arrayOfObjs={this.arrayOfObjs}/>
         <WidgetClock />
         <Weather/>
+        <Autocomplete names={["Abba", "Barney"]}/>
       </div>
     );
   }

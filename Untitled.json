@@ -9,15 +9,3 @@
 "id":2643743,
 "name":"London",
 "cod":200}
-
-
-let geo = navigator.geolocation
-let lat = 0;
-let long = 0;
-geo.getCurrentPosition(postion=>{
-  console.log(position)
-  let startPos = position
-  lat = startPos.coords.latitude;
-  long = startPos.coords.longtitude;
-
-  })
