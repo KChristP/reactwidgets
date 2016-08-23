@@ -24,7 +24,7 @@ class Widgets extends React.Component{
         <Tabs arrayOfObjs={this.arrayOfObjs}/>
         <WidgetClock />
         <Weather/>
-        <Autocomplete names={["Abba", "Barney"]}/>
+        <Autocomplete names={["Abba", "Barney", "Concord", "Deuce", "England", "Apple", "avocado"]}/>
       </div>
     );
   }

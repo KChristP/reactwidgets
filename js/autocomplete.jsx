@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 
 class Autocomplete extends React.Component {
   constructor(props){
@@ -39,7 +40,7 @@ class Autocomplete extends React.Component {
       <div>
         <input onChange={this.updateValue.bind(this)} type="text" name="name" value={this.state.value} />
           <ul>
-            {liTags}
+            <ReactCSSTransitionGroup transitionName="auto" transitionEnterTimeout={200} transitionLeaveTimeout={200}>{liTags}</ReactCSSTransitionGroup>
           </ul>
       </div>
     );
