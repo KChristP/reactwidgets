@@ -19,3 +19,32 @@
    transform: translateY(500%);
    transition: opacity 500ms, transform 500ms;
  }
+
+.tabs{
+  padding: 0;
+  list-style: none;
+  border: 1px solid black;
+  width: 163px;
+  height: 150px;
+}
+
+.tabs li {
+  display: inline-block;
+  padding: 5px;
+  float: left;
+  position: relative;
+  border: 1px solid black;
+  font-size: 12px;
+}
+.tabs article{
+  font-size: 16px;
+  position: absolute;
+  float: left;
+  top: 70px;
+}
+
+.group:after{
+  content: "";
+  display: block;
+  clear: both;
+}

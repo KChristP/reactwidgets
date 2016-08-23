@@ -30,7 +30,7 @@ class Tabs extends React.Component{
       }
     });
     return(
-      <ul>
+      <ul className="tabs group">
         {tabContent}
       </ul>
     );

@@ -4,7 +4,7 @@ import React from 'react';
 class Weather extends React.Component {
   constructor(){
     super();
-    this.state = {temperature: 0, city: "none", latitude: 0, longitude: 0};
+    this.state = {temperature: "Location not provided", city: "Location not provided", latitude: 0, longitude: 0};
   }
 
   getWeather(){
